@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",                          
+    "module": "commonjs",                     
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceRoot": "src",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "src/tests"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "desafio-linkapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node -r dotenv/config --files src/server.ts",
+    "build:start": "tsc && node dist/index.js",
+    "lint": "tslint -c tslint.json 'src/**/*.ts*'",
+    "lint:fix": "tslint -c tslint.json --fix 'src/**/*.ts*'",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nothasm/Desafio-LinkApi.git"
+  },
+  "author": "Tohn Matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nothasm/Desafio-LinkApi/issues"
+  },
+  "homepage": "https://github.com/Nothasm/Desafio-LinkApi#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.4",
+    "@types/mongoose": "^5.7.8",
+    "dotenv": "^8.2.0",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jstoxml": "^1.6.5",
+    "mongoose": "^5.9.7"
+  }
+}
