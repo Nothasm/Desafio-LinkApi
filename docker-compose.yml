@@ -8,9 +8,7 @@ services:
             MONGO_URI: 'mongodb://db:27017/example'
             PORT: 3000
             BLING_URL: https://bling.com.br/Api/v2/pedido/json/
-            PIPEDRIVE_URL: https://api.pipedrive.com/v1/
             BLING_API_KEY: 
-            PIPEDRIVE_API_KEY: 
         depends_on:
             - db
         ports:
