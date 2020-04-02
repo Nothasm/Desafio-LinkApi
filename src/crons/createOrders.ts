@@ -39,4 +39,9 @@ export async function syncOrders() {
     }
 };
 
-if (process.env.PIPEDRIVE_API_KEY) syncOrders();
+if (!process.env.PIPEDRIVE_API_KEY) {
+    log("FOR THIS WORKER TO RUN YOU NEED TO SET AN API KEY FOR PIPEDRIVE")
+    process.exit(1);
+} 
+
+syncOrders();
