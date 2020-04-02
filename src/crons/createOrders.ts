@@ -39,4 +39,4 @@ export async function syncOrders() {
     }
 };
 
-syncOrders();
+if (process.env.PIPEDRIVE_API_KEY) syncOrders();
